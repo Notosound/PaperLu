@@ -1,0 +1,4 @@
+function lupaper_enqueue_scripts() {
+  wp_enqueue_script('lupaper-script', get_template_directory_uri() . '/script.js', array(), null, true);
+}
+add_action('wp_enqueue_scripts', 'lupaper_enqueue_scripts');
